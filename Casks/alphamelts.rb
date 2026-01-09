@@ -6,7 +6,7 @@ cask "alphamelts" do
     arch arm: "arm64", intel: "x86_64"
   end
   on_linux do
-    arch arm64: "aarch64", x86_64: "x86_64"
+    arch arm: "aarch64", intel: "x86_64"
   end
 
   # switch from python-like in next release and use depends_on instead.

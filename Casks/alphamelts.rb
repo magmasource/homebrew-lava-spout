@@ -24,8 +24,8 @@ cask "alphamelts" do
 
   # Documentation: https://docs.brew.sh/Brew-Livecheck
   livecheck do
-#    url ""
-#    strategy ""
+    #    url ""
+    #    strategy ""
     skip "NYI"
   end
 
@@ -39,5 +39,5 @@ cask "alphamelts" do
   binary  "file-format.command", target: "file-format"
 
   # Documentation: https://docs.brew.sh/Cask-Cookbook#stanza-zap
-  #zap trash: ""
+  # zap trash: ""
 end

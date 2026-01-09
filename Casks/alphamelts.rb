@@ -20,7 +20,7 @@ cask "alphamelts" do
 
   url "https://github.com/magmasource/alphaMELTS/releases/download/v#{version}/alphamelts-app-2.3.2-#{os}-#{arch}.zip"
   name "alphamelts"
-  desc "Text-menu interface to alphaMELTS 2+",
+  desc "Text-menu interface to alphaMELTS 2+"
 
   # Documentation: https://docs.brew.sh/Brew-Livecheck
   livecheck do
@@ -33,10 +33,10 @@ cask "alphamelts" do
 
   # target name will change with next release to just "alphamelts"
   # .command will revert to .pl
-  binary  macos: "alphamelts_macos", linux: "alphamelts_linux", target: "alphamelts2",
-          "run-alphamelts.command", target: "run-alphamelts",
-          "column-pick.command", target: "column-pick",
-          "file-format.command", target: "file-format"
+  binary  macos: "alphamelts_macos", linux: "alphamelts_linux", target: "alphamelts2"
+  binary  "run-alphamelts.command", target: "run-alphamelts"
+  binary  "column-pick.command", target: "column-pick"
+  binary  "file-format.command", target: "file-format"
 
   # Documentation: https://docs.brew.sh/Cask-Cookbook#stanza-zap
   #zap trash: ""

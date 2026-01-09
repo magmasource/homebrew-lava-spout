@@ -29,7 +29,12 @@ cask "alphamelts" do
     skip "NYI"
   end
 
-  depends_on macos: "", linux: ""
+  on_macos do
+    depends_on macos: ">= :catalina"
+  end
+#  on_linux do
+#    depends_on linux: "ubuntu22.04"
+#  end
 
   # target name will change with next release to just "alphamelts"
   # .command will revert to .pl

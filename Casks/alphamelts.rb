@@ -38,7 +38,13 @@ cask "alphamelts" do
 
   # target name will change with next release to just "alphamelts"
   # .command will revert to .pl
-  binary  macos: "alphamelts_macos", linux: "alphamelts_linux", target: "alphamelts2"
+
+  on_macos do
+    binary  "alphamelts_macos",  target: "alphamelts2"
+  end
+  on_linux do
+    binary "alphamelts_linux", target: "alphamelts2"
+  end
   binary  "run-alphamelts.command", target: "run-alphamelts"
   binary  "column-pick.command", target: "column-pick"
   binary  "file-format.command", target: "file-format"

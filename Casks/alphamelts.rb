@@ -10,7 +10,7 @@ cask "alphamelts" do
   end
 
   # switch from python-like in next release and use depends_on instead.
-  os macos: "mcosx_14_0", linux: "ubuntu22_04"
+  os macos: "macosx_14_0", linux: "ubuntu22_04"
 
   version "2.3.2-beta.0"
   sha256  arm:          "1ed093e933eb4fb76e4942c888064ee26c7fdfe63e0f2802f9878a76b7b624ae",

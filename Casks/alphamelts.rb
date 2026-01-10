@@ -9,7 +9,7 @@ cask "alphamelts" do
     arch arm: "aarch64", intel: "x86_64"
   end
 
-  # switch from python-like in next release and use depends_on instead.
+  # switch from python-like in next release and use depends_on instead?
   os macos: "macosx_14_0", linux: "ubuntu22_04"
 
   version "2.3.2-beta.0"
@@ -47,9 +47,9 @@ cask "alphamelts" do
   on_linux do
     binary "alphamelts-app-2.3.2-#{os}-#{arch}/alphamelts_linux", target: "alphamelts2"
   end
-  binary "alphamelts-app-2.3.2-#{os}-#{arch}/run-alphamelts.command", target: "run-alphamelts"
-  binary "alphamelts-app-2.3.2-#{os}-#{arch}/column-pick.command", target: "column-pick"
-  binary "alphamelts-app-2.3.2-#{os}-#{arch}/file-format.command", target: "file-format"
+  binary "alphamelts-app-2.3.2-#{os}-#{arch}/run-alphamelts.command", target: "run-alphamelts.command"
+  binary "alphamelts-app-2.3.2-#{os}-#{arch}/column-pick.command", target: "column-pick.command"
+  binary "alphamelts-app-2.3.2-#{os}-#{arch}/file-format.command", target: "file-format.command"
 
   # Documentation: https://docs.brew.sh/Cask-Cookbook#stanza-zap
   # zap trash: ""

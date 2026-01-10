@@ -11,7 +11,6 @@ cask "alphamelts" do
   # switch from python-like in next release and use depends_on instead?
   os macos: "macosx_14_0", linux: "ubuntu22_04"
 
-  # homepage "https://alphamelts.caltech.edu/"
   version "2.3.2-beta.0"
   sha256  arm:          "1ed093e933eb4fb76e4942c888064ee26c7fdfe63e0f2802f9878a76b7b624ae",
           intel:        "b06effceae8898c4b5262e4dce875db560f4f315c8f8c13c15596b8e01de1dc5",
@@ -22,7 +21,7 @@ cask "alphamelts" do
       verified: "github.com/magmasource/alphaMELTS/"
   name "alphamelts"
   desc "Text-menu interface to alphaMELTS 2+"
-  homepage "https://github.com/magmasource/alphaMELTS/"
+  # homepage "https://alphamelts.caltech.edu/"
 
   # Documentation: https://docs.brew.sh/Brew-Livecheck
   livecheck do

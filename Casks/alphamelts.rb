@@ -38,10 +38,10 @@ cask "alphamelts" do
 
   depends_on "unzip"
 
-  # installer script: {
-  #  executable: "unzip",
-  #  args:       ["-l", "*alphamelts-app-2.3.2-#{os}-#{arch}.zip"]
-  # }
+  installer script: {
+    executable: "unzip",
+    args:       ["-l", "*alphamelts-app-2.3.2-#{os}-#{arch}.zip"],
+  }
 
 
   #  args:       ["*alphamelts-app-2.3.2-#{os}-#{arch}.zip", "#{staged_path}"],

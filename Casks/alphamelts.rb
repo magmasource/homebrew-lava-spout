@@ -30,11 +30,21 @@ cask "alphamelts" do
   end
 
   on_macos do
-    depends_on macos: ">= :catalina"
+    depends_on macos: ">= :sonoma"
   end
-#  on_linux do
-#    depends_on linux: "ubuntu22.04"
-#  end
+  #  on_linux do
+  #    depends_on linux: "ubuntu22.04"
+  #  end
+
+  depends_on "unzip"
+
+  installer script: {
+    executable: "unzip",
+    args:       ["-l" "*alphamelts-app-2.3.2-#{os}-#{arch}.zip"],
+  }
+
+
+  #  args:       ["*alphamelts-app-2.3.2-#{os}-#{arch}.zip", "#{staged_path}"],
 
   # target name will change with next release to just "alphamelts"
   # .command will revert to .pl

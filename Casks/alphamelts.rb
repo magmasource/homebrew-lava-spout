@@ -40,7 +40,7 @@ cask "alphamelts" do
 
   installer script: {
     executable: "unzip",
-    args:       ["-l" "*alphamelts-app-2.3.2-#{os}-#{arch}.zip"],
+    args:       ["-l", "*alphamelts-app-2.3.2-#{os}-#{arch}.zip"]
   }
 
 
@@ -50,14 +50,14 @@ cask "alphamelts" do
   # .command will revert to .pl
 
   on_macos do
-    binary  "alphamelts_macos",  target: "alphamelts2"
+    binary "alphamelts_macos", target: "alphamelts2"
   end
   on_linux do
     binary "alphamelts_linux", target: "alphamelts2"
   end
-  binary  "run-alphamelts.command", target: "run-alphamelts"
-  binary  "column-pick.command", target: "column-pick"
-  binary  "file-format.command", target: "file-format"
+  binary "run-alphamelts.command", target: "run-alphamelts"
+  binary "column-pick.command", target: "column-pick"
+  binary "file-format.command", target: "file-format"
 
   # Documentation: https://docs.brew.sh/Cask-Cookbook#stanza-zap
   # zap trash: ""

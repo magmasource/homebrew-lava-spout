@@ -36,20 +36,20 @@ cask "alphamelts" do
   #    depends_on linux: "ubuntu22.04"
   #  end
 
-  installer script: "#{staged_path}/alphamelts-app-2.3.2-#{os}-#{arch}/install.command"
+  # installer script: "#{staged_path}/alphamelts-app-2.3.2-#{os}-#{arch}/install.command"
 
   # target name will change with next release to just "alphamelts"
   # .command will revert to .pl
 
   on_macos do
-    binary "alphamelts_macos", target: "alphamelts2"
+    binary "alphamelts-app-2.3.2-#{os}-#{arch}/alphamelts_macos", target: "alphamelts2"
   end
   on_linux do
-    binary "alphamelts_linux", target: "alphamelts2"
+    binary "alphamelts-app-2.3.2-#{os}-#{arch}/alphamelts_linux", target: "alphamelts2"
   end
-  binary "run-alphamelts.command", target: "run-alphamelts"
-  binary "column-pick.command", target: "column-pick"
-  binary "file-format.command", target: "file-format"
+  binary "alphamelts-app-2.3.2-#{os}-#{arch}/run-alphamelts.command", target: "run-alphamelts"
+  binary "alphamelts-app-2.3.2-#{os}-#{arch}/column-pick.command", target: "column-pick"
+  binary "alphamelts-app-2.3.2-#{os}-#{arch}/file-format.command", target: "file-format"
 
   # Documentation: https://docs.brew.sh/Cask-Cookbook#stanza-zap
   # zap trash: ""

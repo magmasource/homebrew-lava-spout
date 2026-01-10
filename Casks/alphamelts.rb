@@ -19,10 +19,10 @@ cask "alphamelts" do
           x86_64_linux: "659e535679b5d8d8b22284a23cdd3099410ac60818090882a77e9d675bd7b67b"
 
   url "https://github.com/magmasource/alphaMELTS/releases/download/v#{version}/alphamelts-app-2.3.2-#{os}-#{arch}.zip",
-      verified: "github.com/magmasource/alphaMELTS/"
+      verified: "https://github.com/magmasource/alphaMELTS/"
   name "alphamelts"
   desc "Text-menu interface to alphaMELTS 2+"
-  homepage "github.com/magmasource/alphaMELTS/"
+  homepage "https://github.com/magmasource/alphaMELTS/"
 
   # Documentation: https://docs.brew.sh/Brew-Livecheck
   livecheck do

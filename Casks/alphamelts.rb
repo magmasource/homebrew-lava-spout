@@ -43,7 +43,6 @@ cask "alphamelts" do
     args:       ["-l", "*alphamelts-app-2.3.2-#{os}-#{arch}.zip"],
   }
 
-
   #  args:       ["*alphamelts-app-2.3.2-#{os}-#{arch}.zip", "#{staged_path}"],
 
   # target name will change with next release to just "alphamelts"

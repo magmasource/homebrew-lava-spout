@@ -36,7 +36,7 @@ cask "alphamelts" do
   #    depends_on linux: "ubuntu22.04"
   #  end
 
-  installer script: "#{staged_path}/install.command"
+  installer script: "#{staged_path}/alphamelts-app-2.3.2-#{os}-#{arch}/install.command"
 
   # target name will change with next release to just "alphamelts"
   # .command will revert to .pl

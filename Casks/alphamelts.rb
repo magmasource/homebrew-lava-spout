@@ -21,7 +21,7 @@ cask "alphamelts" do
       verified: "github.com/magmasource/alphaMELTS/"
   name "alphamelts"
   desc "Text-menu interface to alphaMELTS 2+"
-  # homepage "https://alphamelts.caltech.edu/"
+  homepage "https://alphamelts.caltech.edu/"
 
   # Documentation: https://docs.brew.sh/Brew-Livecheck
   livecheck do

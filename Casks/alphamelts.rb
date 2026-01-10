@@ -36,14 +36,7 @@ cask "alphamelts" do
   #    depends_on linux: "ubuntu22.04"
   #  end
 
-  depends_on "unzip"
-
-  installer script: {
-    executable: "unzip",
-    args:       ["-l", "*alphamelts-app-2.3.2-#{os}-#{arch}.zip"],
-  }
-
-  #  args:       ["*alphamelts-app-2.3.2-#{os}-#{arch}.zip", "#{staged_path}"],
+  installer "#{staged_path}/install.command"
 
   # target name will change with next release to just "alphamelts"
   # .command will revert to .pl

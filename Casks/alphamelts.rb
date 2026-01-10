@@ -19,7 +19,7 @@ cask "alphamelts" do
           x86_64_linux: "659e535679b5d8d8b22284a23cdd3099410ac60818090882a77e9d675bd7b67b"
 
   url "https://github.com/magmasource/alphaMELTS/releases/download/v#{version}/alphamelts-app-2.3.2-#{os}-#{arch}.zip",
-      verified: "https://github.com/magmasource/alphaMELTS/"
+      verified: "github.com/magmasource/alphaMELTS/"
   name "alphamelts"
   desc "Text-menu interface to alphaMELTS 2+"
   homepage "https://github.com/magmasource/alphaMELTS/"
@@ -48,8 +48,11 @@ cask "alphamelts" do
     binary "alphamelts-app-2.3.2-#{os}-#{arch}/alphamelts_linux", target: "alphamelts2"
   end
   binary "alphamelts-app-2.3.2-#{os}-#{arch}/run-alphamelts.command", target: "run-alphamelts.command"
+  binary "alphamelts-app-2.3.2-#{os}-#{arch}/run-alphamelts.command", target: "run-alphamelts"
   binary "alphamelts-app-2.3.2-#{os}-#{arch}/column-pick.command", target: "column-pick.command"
+  binary "alphamelts-app-2.3.2-#{os}-#{arch}/column-pick.command", target: "column-pick"
   binary "alphamelts-app-2.3.2-#{os}-#{arch}/file-format.command", target: "file-format.command"
+  binary "alphamelts-app-2.3.2-#{os}-#{arch}/file-format.command", target: "file-format"
 
   # Documentation: https://docs.brew.sh/Cask-Cookbook#stanza-zap
   # zap trash: ""
